@@ -1,0 +1,36 @@
+{
+  "name": "pseudo-algo",
+  "displayName": "pseudo-algo",
+  "description": "CodeBoxx Pseudocode Syntax",
+  "publisher": "CodeBoxx",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "algo",
+        "aliases": [
+          "CodeBoxx Pseudocode",
+          "algo"
+        ],
+        "extensions": [
+          ".algo",
+          ".pseudo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "algo",
+        "scopeName": "source.algo",
+        "path": "./syntaxes/algo.tmLanguage.json"
+      }
+    ]
+  }
+}
