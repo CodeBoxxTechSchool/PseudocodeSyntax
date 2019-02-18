@@ -14,7 +14,7 @@
       "patterns": [
         {
           "name": "storage.type.algo",
-          "match": "(?i:\\b(SEQUENCE|USING|RETURN|ENDSEQUENCE)\\b)",
+          "match": "(?i:\\b(SEQUENCE|USING|RETURN|ENDSEQUENCE|END SEQUENCE)\\b)",
           "comment": "A linear progression where one task is performed sequentially after another. "
         },
         {
@@ -74,7 +74,7 @@
         },
 
         {
-          "match": "(?i:\\b(END IF|END WHILE|END FOR|END SEQUENCE)\\b)",
+          "match": "(?i:\\b(END IF|END WHILE|END FOR)\\b)",
           "name": "keyword.control.algo",
           "comment": "This is for common mistakes, should be invalid.illegal.algo"
         },
