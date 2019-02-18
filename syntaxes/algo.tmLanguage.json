@@ -14,12 +14,71 @@
       "patterns": [
         {
           "name": "storage.type.algo",
-          "match": "(?i:\\b(SEQUENCE|USING|RETURN|END SEQUENCE)\\b)"
+          "match": "(?i:\\b(SEQUENCE|USING|RETURN|ENDSEQUENCE)\\b)",
+          "comment": "A linear progression where one task is performed sequentially after another. "
+        },
+        {
+          "match": "(?i:\\b(WHILE|ENDWHILE)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "A loop (repetition) with a simple conditional test at its beginning."
+        },
+        {
+          "match": "(?i:\\b(IF|THEN|ELSE|ELSE IF|ENDIF)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "A decision (selection) in which a choice is made between two alternative courses of action."
+        },
+        {
+          "match": "(?i:\\b(REPEAT|UNTIL)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "A loop with a simple conditional test at the bottom."
+        },
+        {
+          "match": "(?i:\\b(CASE|OF|OTHERS|ENDCASE)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "A multiway branch (decision) based on the value of an expression. CASE is a generalization of IF-THEN-ELSE."
+        },
+        {
+          "match": "(?i:\\b(FOR|ENDFOR)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "A counting loop/iterate over a list"
+        },
+        {
+          "match": "(?i:\\b(READ|OBTAIN|GET)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "Input keywords"
+        },
+        {
+          "match": "(?i:\\b(PRINT|DISPLAY|SHOW)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "Output keywords"
+        },
+        {
+          "match": "(?i:\\b(COMPUTE|CALCULATE|DETERMINE)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "Compute keywords"
         },
         {
           "name": "keyword.control.algo",
-          "match": "(?i:\\b(SET|TO)\\b)"
+          "match": "(?i:\\b(SET|TO|INIT)\\b)",
+          "comment": "Initialize keywords"
         },
+        {
+          "name": "keyword.control.algo",
+          "match": "(?i:\\b(INCREMENT|BUMP|ADD)\\b)",
+          "comment": "Add one/increment keywords"
+        },
+        {
+          "name": "keyword.control.algo",
+          "match": "(?i:\\b(BEGIN|EXCEPTION|WHEN|RAISE)\\b)",
+          "comment": "Error handling"
+        },
+
+        {
+          "match": "(?i:\\b(END IF|END WHILE|END FOR|END SEQUENCE)\\b)",
+          "name": "keyword.control.algo",
+          "comment": "This is for common mistakes, should be invalid.illegal.algo"
+        },
+
         {
           "match": "(?i:\\b(IF|THEN|ELSE|ELSE IF|END IF|WHILE|FOR|TO|EACH|END FOR|RETURN|CONTINUE|Do|Until|Loop|Next|With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
           "name": "keyword.control.algo"
@@ -30,15 +89,15 @@
         },
         {
           "name": "keyword.control.algo",
-          "match": "(?i:\\b(CALL|WITH|RETURNING)\\b)"
-        },
-        {
-          "name": "keyword.control.algo",
-          "match": "(?i:\\b(ADD|COMPUTE|DETERMINE)\\b)"
+          "match": "(?i:\\b(CALL|WITH|RETURNING|EACH|THEN|RETURN)\\b)"
         },
         {
           "name": "keyword.operator.comparison.algo",
-          "match": "<=>|<=|>=|<|>|IS|IS NOT|EQUAL"
+          "match": "<=>|<=|>=|<|>|="
+        },
+        {
+          "name": "keyword.operator.comparison.algo",
+          "match": "(?i:\\b(IS|IS NOT|EQUAL|NOT EQUAL|IN|AND)\\b)"
         },
         {
           "match": "(?i:\\s*\\b(EMPTY|FALSE|NOTHING|NULL|TRUE)\\b)",

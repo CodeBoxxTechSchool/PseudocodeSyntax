@@ -2,6 +2,10 @@
   "name": "pseudo-algo",
   "displayName": "pseudo-algo",
   "description": "CodeBoxx Pseudocode Syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeBoxxTechSchool/PseudocodeSyntax.git"
+  },
   "publisher": "CodeBoxx",
   "version": "0.0.1",
   "engines": {
