@@ -18,6 +18,11 @@
           "comment": "A linear progression where one task is performed sequentially after another. "
         },
         {
+          "name": "storage.type.algo",
+          "match": "(?i:\\b(DEFINE|INSTANTIATE|ENDDEFINE|END DEFINE)\\b)",
+          "comment": "A description of an object and it's instantiation"
+        },
+        {
           "match": "(?i:\\b(WHILE|ENDWHILE)\\b)",
           "name": "keyword.control.algo",
           "comment": "A loop (repetition) with a simple conditional test at its beginning."
